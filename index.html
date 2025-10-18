@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ApexPlanet | Interactive WebApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hero-bg"></div>
+
+  <header class="glass-header">
+    <h1>✨ ApexPlanet Interactive WebApp ✨</h1>
+    <p>Build. Style. Interact — Master HTML, CSS & JavaScript</p>
+  </header>
+
+  <main class="main-container">
+    <!-- Contact Form -->
+    <section class="glass-card">
+      <h2>📬 Contact Us</h2>
+      <form id="contactForm">
+        <div class="input-group">
+          <input type="text" id="name" required />
+          <label for="name">Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+          <textarea id="message" required></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formMsg"></p>
+      </form>
+    </section>
+
+    <!-- To-Do List -->
+    <section class="glass-card">
+      <h2>📝 Dynamic To-Do List</h2>
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="Add a new task..." />
+        <button id="addTaskBtn" class="btn">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer class="glass-footer">
+    <p>© 2025 ApexPlanet Software Pvt Ltd | Designed with 💚 by You</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
